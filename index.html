@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css" />
+    <script src="puzzle.js"></script>
+  </head>
+
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div style="display: flex; align-items: center">
+        <!-- <img
+          src="images/26.jpg"
+          alt="Avengers"
+          style="width: 405px; height: 405px; margin-right: 50px; flex: 1"
+        /> -->
+        <div style="flex: 1; text-align: center">
+          <div id="board"></div>
+        </div>
+      </div>
+      <!-- <h2>Turns: <span id="turns">0</span></h2> -->
+      <div style="flex: 1; text-align: center; margin-top: 20px">
+        <div id="pieces"></div>
+      </div>
+      <div style="margin-top: 20px">
+        <button onclick="resetGame()">Reset</button>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" style="display: none">
+      <div id="videoContainer">
+        <iframe
+          id="celebrationVideo"
+          width="800"
+          height="450"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <button id="closeVideo">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
